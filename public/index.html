@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <title>canvas画布</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"></head>
-  <body>
-    <canvas id="painter" width="500" height="400"></canvas>
+  <body style="background-color:aliceblue">
+    <div class="menu">
+        <button class="btn" onclick="paint?.exec('select')">选择</button>
+        <button class="btn" onclick="paint?.exec('line')">直线</button>
+        <button class="btn" onclick="paint?.exec('pen')">画笔</button>
+        <button class="btn" onclick="paint?.exec('circle')">圆形</button>
+    </div>
+    <canvas tabindex="-1" id="painter" width="500" height="400" style="background-color: white;"></canvas>
   </body>
 </html>
